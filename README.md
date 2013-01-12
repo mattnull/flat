@@ -1,4 +1,4 @@
 Flat
 ==========
 
-A wireframing / rapid prototyping toolkit
+A simple wireframing and rapid prototyping bootstrap
