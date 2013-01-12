@@ -1,7 +1,7 @@
-class WireFramer
+class Flat
 
 	constructor : () ->
-		@$wireframer = $('[wireframer]')
+		@$flat = $('[flat]')
 		@$views = $('[view]')
 		@$views.not(':first').hide()
 		@attachEvents()
@@ -15,8 +15,8 @@ class WireFramer
 			self.view(view)
 
 	updateColor : (color) ->
-		color = color or @$wireframer.attr('wireframer')
-		@$wireframer.find('*').css 'borderColor' : color
+		color = color or @$flat.attr('wireframer')
+		@$flat.find('*').css 'borderColor' : color
 
 	view : (view) ->
 		@currentView = @$views.filter(':visible')
